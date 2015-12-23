@@ -44,11 +44,9 @@ def signupc(request):
 		if not l['spassword']==l['cf_password']:
 			serror.append("Sorry the passwords do not match")
 		if not serror:
-			try:
-				user.objects.create(email=l['semail'],first_name=l['first_name'],last_name=l['last_name'],password=l['spassword'],dob=l['dob'])
-				return render(request,"lsignup.html",)
-			except:
-				serror.append("An error occured")
+			user.objects.create(email=l['semail'],first_name=l['first_name'],last_name=l['last_name'],password=l['spassword'],dob=l['dob'])
+			return render(request,"lsignup.html",)
+
 	return render(request,"signup.html",{'sform':signup(),'serror':serror})
 
 def add(request):
