@@ -71,6 +71,9 @@ def logout(request):
 	del request.session['user']
 	return HttpResponseRedirect("/")
 def upload(request):
-	name=request.session['user']
-	imodel=fu.objects.all()[::-1]
-	return render(request, 'home1.html', {'imodel':imodel,'name':name})
+	if  request.session.get('user',False):
+		name=request.session['user']
+		imodel=fu.objects.all()[::-1]
+		return render(request, 'home1.html', {'imodel':imodel,'name':name})
+	else:
+		return HttpResponseRedirect("/")
