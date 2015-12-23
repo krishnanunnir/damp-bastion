@@ -1,0 +1,31 @@
+span{
+  float: right;
+  font-size:18px;
+  display:inline;
+  text-decoration:none;
+  color:#808080;
+
+}
+html {
+  color:#808080;
+  max-width: 100%;
+  overflow-x: hidden;
+
+}
+a{
+  text-decoration:none;
+  color:#808080;
+}
+img{
+  border-radius:5px;
+}
+div{
+  position:relative;
+  left:25%;
+
+}
+.orange{
+  position:relative;
+  left:34%;
+  top:150px;
+}

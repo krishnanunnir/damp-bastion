@@ -1,0 +1,17 @@
+{%load staticfiles%}
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="{%static 'css/home.css'%}">
+</head>
+<body>
+<span><a href="/upload">{{name}}</a>&nbsp&nbsp&nbsp<a href="/add">Add Photo</a>&nbsp&nbsp&nbsp<a href="/logout">logout</a></span>
+<br>
+<br>
+<div class="lemon">
+{%for i in imodel%}
+{{i.name}}<br><br>
+<img src="{{i.ufile.url}}" height="600" width="600"><br>
+{%endfor%}
+</div>
+</body>
+</html>

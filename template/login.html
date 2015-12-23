@@ -1,0 +1,34 @@
+{%load staticfiles%}
+<!DOCTYPE html>
+
+<head>
+	<title>home </title>
+
+
+  <link rel="stylesheet" type="text/css" href="{%static 'css/login.css'%}">
+
+</head>
+<body>
+	<span>Login</span>
+  <form action=" " method="POST">
+	<div class="login">
+	{{form.email}}
+	<br>
+	{{form.password}}
+	<br>
+	{%csrf_token%}
+	<input type="submit" value="Sign in" id="id_login">
+
+	{%if lerror%}
+
+	<ul>
+		<li>{{lerror.0}}</li>
+	</ul>
+	{%endif%}
+	<br>
+	<br>
+	<a href="/signup/">Sign Up</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/signup/">Forgot Password?</a>
+	</div>
+	</form>
+</body>
+</html>

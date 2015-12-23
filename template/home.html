@@ -1,0 +1,20 @@
+{%load staticfiles%}
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="{%static 'css/home.css'%}">
+</head>
+<body>
+<span><a href="/upload">{{name}}</a>&nbsp&nbsp&nbsp<a href="/add">Add Photo</a>&nbsp&nbsp&nbsp<a href="/logout">logout</a></span>
+<br>
+<br>
+<form action="" method="POST" enctype="multipart/form-data">
+  <div class="orange">
+  <h1>Upload image</h1>
+  {{fuf.ufile}}<br><br>
+  {% csrf_token %}
+  <input type="submit" value="Submit">
+</div>
+</form>
+
+</body>
+</html>

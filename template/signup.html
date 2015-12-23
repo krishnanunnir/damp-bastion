@@ -1,0 +1,55 @@
+{%load staticfiles%}
+<!DOCTYPE html>
+
+<head>
+	<title>home </title>
+
+
+  <link rel="stylesheet" type="text/css" href="{%static 'css/lsignup.css'%}">
+
+</head>
+<body>
+	<form action="/signup/" method="POST">
+	<div class="signup">
+		<span>Sign Up</span>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		{{sform.first_name}}
+		<br>
+		<br>
+
+		{{sform.last_name}}
+		<br>
+		<br>
+
+		{{sform.semail}}
+		<br>
+		<br>
+
+		{{sform.spassword}}
+		<br>
+		<br>
+
+		{{sform.cf_password}}
+		<br>
+		<br>
+
+		{{sform.dob}}
+		<br>
+		<br>
+		{%csrf_token%}
+		<input type="submit" value="Create Account" id="id_signup">
+		{%if serror%}
+		<ul>
+		  <li>{{serror.0}}</li>
+		</ul>
+		{%endif%}
+		</div>
+	</form>
+
+
+</body>
+</html>

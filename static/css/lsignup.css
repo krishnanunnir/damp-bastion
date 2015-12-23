@@ -1,0 +1,61 @@
+
+		#id_spassword{
+			position:absolute;
+
+			height:30px;
+			width:400px;
+
+		}
+		#id_semail{
+			position:absolute;
+			height:30px;
+			width:400px;
+
+		}
+		#id_first_name{
+			position:absolute;
+			height:30px;
+			width:400px;
+
+		}
+		#id_last_name{
+			position:absolute;
+			height:30px;
+			width:400px;
+
+		}
+		#id_cf_password{
+			position:absolute;
+			height:30px;
+			width:400px;
+
+		}
+		#id_dob{
+			position:absolute;
+			height:30px;
+			width:400px;
+
+		}
+		#id_signup{
+			height:40px;
+			width:409px
+		}
+
+		.signup{
+			position:relative;
+			font-size:18px;
+      top:150px;
+      left:34%;
+		}
+		span{
+			position:absolute;
+
+			font-family:Sawasdee,Purisa;
+			font-size:50px;
+		}
+
+ 		html {
+      color:#808080;
+ 		  max-width: 100%;
+      overflow-x: hidden;
+ 		}

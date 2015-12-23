@@ -1,0 +1,43 @@
+
+		#id_password{
+			width:400px;
+			height:30px;
+
+  	}
+		#id_email{
+       width:400px;
+			 height:30px;
+
+    }
+    .login{
+  		display:inline;
+  		position:relative;
+			top:250px;
+	  	left:34%;
+
+
+  	}
+    html {
+			color:#808080;
+ 			max-width: 100%;
+ 			overflow-x: hidden;
+
+ 		}
+		#id_login{
+			width:408px;
+			height:40px;
+		}
+
+		span{
+
+			font-size:50px;
+			position:relative;
+			top:230px;
+			left:43%;
+		}
+		a{
+			font-size:18px;
+			display:inline;
+			text-decoration:none;
+			color:#808080;
+		}
